@@ -10,29 +10,29 @@ public class MonthCode {
         System.out.println("Please enter an integer between 1 and 12: ");
         int month = in.nextInt();
         String season;
-        if (month >= 3) {
+       if (month >= 3) 
+       System.out.println("It is winter");
        
-        }System.out.println("It is winter");
-       
-         if 
-	    
-       	(month < 4 && month>= 6 );{
+       else if 
+	    	(month < 4);
+    	   if (month> 6)
 	   
-            System.out.println("It is Spring ");}
+           System.out.println("It is Spring ");
+    	   
 	
-        if (month <=7 && month >= 9);{
+       	else if (month <7); 
+       		if( month > 9)
+            System.out.println("It is Summer");
+       		
+	   
+       else if (month < 10);
+    	   if(month > 12)
+            System.out.println("It is Fall");
+    	     
+      else if (month<12)
+      if ( month >1);
             
-            System.out.println("It is Summer");}
-            
-         if (month <= 10 && month >= 12);{
-            
-            System.out.println("It is Fall");}
-            
-        else 
-        	(month<12 && month >1);{
-            
-            System.out.println("It is an invalid month.");}
-            
+            System.out.println("It is an invalid month.");
         
         }
         
