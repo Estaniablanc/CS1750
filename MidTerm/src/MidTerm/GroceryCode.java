@@ -12,17 +12,17 @@ public class GroceryCode {
        double amount = grocery.nextDouble();
        double percent = 0;
         
-       if (amount >= 10) {
+       if (amount >= 10 && amount <= 60) {
     	   percent = 8;
-       } else if(amount >= 50) {
+       } else if(amount > 60&& amount<=150) {
     	   percent = 10;
-       }else if(amount >= 150 ) {	   
+       }else if(amount <= 210) {	   
            percent = 12;
        }else if(amount >= 210) {
     	   percent = 14;
        }
        double discount = percent * amount/100;
-       System.out.println("you win a dicount coupon of $"+discount+". "+"("+percent+ "% of your purchase)");
+       System.out.printf("you win a dicount coupon of $%.2f.(%.0f %% of your purchase)",discount,percent);
 	}
 
 }
